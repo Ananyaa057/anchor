@@ -1,0 +1,13 @@
+RUNBOOK: Payment Gateway Failing
+
+Symptom: Customers report payments not going through, or the checkout page throws an error at the payment step. Transaction failures spike suddenly.
+
+Steps:
+1. Check the payment provider's status page (Razorpay/Stripe/PayPal etc.) to rule out an outage on their end first.
+2. Check recent API responses/logs for the specific error code returned by the gateway — this usually tells you exactly what's wrong (expired API key, invalid signature, insufficient permissions).
+3. Confirm API keys/secrets haven't expired or been rotated recently without updating the app config.
+4. Test a payment yourself in a sandbox/test environment to reproduce the issue safely.
+5. If it's a provider-side outage, put up a maintenance notice and notify affected customers rather than letting them retry blindly.
+6. Once fixed, manually verify a real test transaction completes end-to-end before declaring it resolved.
+
+Escalate to: payment provider support if the error is on their side and unresolved after 1 hour, since revenue is directly impacted.

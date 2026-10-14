@@ -1,0 +1,13 @@
+RUNBOOK: Database Connection Failing
+
+Symptom: App throws "could not connect to database" errors, pages that need data fail to load, or requests start timing out.
+
+Steps:
+1. Confirm the database server itself is running and reachable (ping it or check the hosting dashboard status).
+2. Check if the connection pool is exhausted — too many open connections can block new ones from being made.
+3. Verify credentials (username/password/connection string) haven't changed or expired.
+4. Check recent config changes — a wrong environment variable after a deploy is a very common cause.
+5. Look at database server logs for crash or resource-limit errors (out of memory, disk full, max connections reached).
+6. Restart the connection pool or app service if the database itself is healthy but the app can't establish new connections.
+
+Escalate to: database/infra owner if the database server itself is down or corrupted, since this usually needs elevated access.

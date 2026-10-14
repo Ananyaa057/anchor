@@ -1,0 +1,13 @@
+RUNBOOK: Deployment Failed
+
+Symptom: A new deploy fails to complete, the build errors out, or the site goes down/breaks right after deploying.
+
+Steps:
+1. Check the deployment logs first — the exact error message almost always points directly to the cause.
+2. Confirm all required environment variables/secrets are set correctly in the deployment environment.
+3. Check if a dependency version changed unexpectedly (a package update can silently break a build).
+4. Try reproducing the build locally to confirm whether it's an environment-specific issue or a real code problem.
+5. If the site is currently broken from a bad deploy, roll back to the last known working version immediately to restore service.
+6. Fix the actual issue in a separate branch and re-deploy only after testing locally.
+
+Escalate to: whoever owns the deployment pipeline/CI setup if the failure is infrastructure-related rather than a code bug.

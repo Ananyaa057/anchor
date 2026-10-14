@@ -1,0 +1,13 @@
+RUNBOOK: Client Not Responding
+
+Symptom: A client has gone silent for several days on an active project — no reply to emails, messages, or approval requests, and a deadline or milestone is approaching.
+
+Steps:
+1. Check your last message — confirm you actually sent a clear, actionable ask (not something vague they could easily ignore).
+2. Send one polite follow-up on the same channel, referencing the original message and the specific thing you need from them.
+3. If no reply in 2-3 days, try a different channel (e.g. move from email to WhatsApp/call) — some clients simply miss one channel.
+4. Document the silence with timestamps — this protects you if the delay later gets blamed on your team.
+5. If a deadline is at risk, proactively communicate a revised timeline rather than silently missing it.
+6. After a week of silence, consider pausing dependent work and clearly stating that progress is blocked pending their input.
+
+Escalate to: whoever owns the client relationship if silence continues past a week and the project timeline is genuinely at risk.

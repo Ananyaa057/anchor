@@ -1,0 +1,13 @@
+RUNBOOK: Server Down / Not Responding
+
+Symptom: Website or app is unreachable, browser shows "connection refused" or times out. Users report the site is completely down.
+
+Steps:
+1. Check if the hosting/server provider has a status page — confirm it's not a provider-wide outage before assuming it's your fault.
+2. SSH into the server (or check the hosting dashboard) and confirm the server process is actually running.
+3. Check server resource usage — if CPU or RAM is maxed out, the server may be unresponsive rather than fully down.
+4. Restart the web server process (e.g. nginx, gunicorn) and check logs for the error that caused the crash.
+5. If restart doesn't fix it, check recent deployments — a bad deploy is the most common cause of sudden downtime.
+6. Once back up, monitor for 15 minutes to confirm it stays stable before closing the incident.
+
+Escalate to: whoever owns hosting/infra if the issue isn't resolved within 30 minutes.

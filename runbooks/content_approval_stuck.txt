@@ -1,0 +1,13 @@
+RUNBOOK: Content Approval Stuck
+
+Symptom: A piece of content (post, campaign, deliverable) has been sitting in "pending approval" for longer than usual, blocking the next step of the workflow.
+
+Steps:
+1. Confirm the approver actually received the content and knows it's waiting on them — don't assume they saw it.
+2. Check if there's unclear or conflicting feedback from multiple reviewers, which often causes silent stalling.
+3. Send a direct, specific follow-up naming exactly what decision is needed (not just "any updates?").
+4. If the approval is blocking a deadline, flag the timeline risk explicitly rather than waiting silently.
+5. Offer a default option ("if I don't hear back by X, I'll proceed with Y") to unblock without needing a full response.
+6. Once approved, document the final sign-off clearly so there's no ambiguity later about what was agreed.
+
+Escalate to: account/project lead if approval is blocked for more than 2-3 days past the expected turnaround.

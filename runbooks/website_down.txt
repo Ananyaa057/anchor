@@ -1,0 +1,13 @@
+RUNBOOK: Website Completely Down
+
+Symptom: Visitors see a browser error (e.g. "this site can't be reached") instead of the website loading at all.
+
+Steps:
+1. Check if the domain itself is resolving — try accessing the site from a different network/device to rule out a local issue.
+2. Check DNS settings — confirm the domain still points to the correct hosting IP/server (a common cause after any hosting change).
+3. Check domain registration/expiry — an expired domain will make the whole site unreachable.
+4. Check hosting account status — sites can go down if a hosting bill wasn't paid or a plan limit was hit.
+5. If DNS and domain are fine, check the server itself (see the "Server Down" runbook).
+6. Once resolved, clear DNS cache and re-test from multiple locations before confirming it's fully back for all users.
+
+Escalate to: domain/hosting account owner immediately if it's a billing or expiry issue, since this needs account-level access to fix.
